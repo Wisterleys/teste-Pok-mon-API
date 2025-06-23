@@ -3,14 +3,13 @@ const container = document.getElementById("pokemon-container");
     const pageSize = 20;
     
     let totalPokemon = 0;
-    allPokemon = [];
+    let allPokemon = [];
     let allPokemonWithInfo = [];
     let currentIndex = 1;
     let isLoading = false;
   
     async function loadAllPokemon() {
       try {
-        // 1️⃣ Primeiro busca o total
         const response = await fetch('https://pokeapi.co/api/v2/pokemon');
         if (!response.ok) {
           console.error('Não foi possível obter o total de Pokémon.');
@@ -128,7 +127,7 @@ const container = document.getElementById("pokemon-container");
             const pokemonNameList = document.getElementById('pokemon-name-list');
 
             if(pokemonNameList == null){
-              return null;
+                return null;
             }
 
             pokemonNameList.innerHTML = '';
@@ -137,7 +136,7 @@ const container = document.getElementById("pokemon-container");
               allPokemon.length == 0
               && allPokemon.name == null
             ){
-              return;
+                return;
             }
 
             if(
@@ -145,7 +144,7 @@ const container = document.getElementById("pokemon-container");
               || event.target.value == ''
             ){
                 handleSearch();
-              return;
+                return;
             }
 
             const filteredPokemonNames = allPokemon.filter((pokemonItem) =>
@@ -153,7 +152,7 @@ const container = document.getElementById("pokemon-container");
             );
 
             if(filteredPokemonNames.length == 0){
-              return;
+                return;
             }
 
             filteredPokemonNames.forEach(pokemonItem => {
@@ -169,5 +168,5 @@ const container = document.getElementById("pokemon-container");
     searchInput.addEventListener("input", loadAllPokemonNameList);
     window.addEventListener("scroll", onScroll);
   
-    // Inicialização
+    // Initialization
     loadAllPokemon();
