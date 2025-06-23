@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #ffcb05, #3b4cca);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,10 +45,10 @@ body {
     color: #fff;
   }
   .badge.type {
-    background-color: #3b4cca;
+    background-color: var(--secondary);
   }
   .badge.ability {
-    background-color: #ffcb05;
+    background-color: var(--primary);
     color: #000;
   }
   .metrics {
