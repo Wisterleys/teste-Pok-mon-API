@@ -15,14 +15,14 @@ Um projeto simples e responsivo para consumir e exibir dados da [PokeAPI](https:
 - **PokeAPI** para obtenção dos dados dos Pokémon.
 
 ## 📁 Estrutura do Projeto
-├─ index.html # Página inicial com listagem de Pokémon
+```├─ index.html # Página inicial com listagem de Pokémon
 ├─ pokemon.html # Página de detalhes de cada Pokémon
 ├─ css/
 │ └─ style.css # Estilos principais
 ├─ js/
 │ └─ index.js # Lógica para exibir e carregar Pokémon
 │ └─ pokemon-details.js # Lógica para exibir detalhes de Pokémon
-
+```
 
 ## ⚡️ Como Executar o Projeto
 1. Clone este repositório:
