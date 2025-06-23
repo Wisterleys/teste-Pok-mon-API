@@ -27,7 +27,7 @@ Um projeto simples e responsivo para consumir e exibir dados da [PokeAPI](https:
 ## ⚡️ Como Executar o Projeto
 1. Clone este repositório:
     ```bash
-    git clone https://url-do-repositorio.git
+    git clone https://github.com/Wisterleys/teste-pokemon-API.git
     ```
 2. Abra o arquivo `index.html` diretamente no navegador para ver a aplicação em funcionamento.
 
